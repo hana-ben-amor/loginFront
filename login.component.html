@@ -1,0 +1,102 @@
+<main>
+  <div class="box">
+    <div class="inner-box">
+      <div class="forms-wrap">
+        <form class="sign-in-form" #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+          <div class="logo">
+            <img src="../../../assets/images/logo.png" alt="booksphere">
+            <span>booksphere</span>
+          </div>
+
+          <div class="heading">
+            <h2>Welcome Back</h2>
+            <h6>Not registred yet?</h6>
+            <a routerLink="/login" class="toggle">Sign up</a>
+          </div>
+
+            <div class="actual-form">
+                
+            <div class="input-wrap">
+              <input type="email" class="input-field " ngModel name="email" id="email" required="" >
+              <label for="email" class="label">Email</label>
+            </div>
+            <div class="input-wrap">
+              <input type="password" class="input-field " ngModel name="password" id="password" required="" >
+              <label for="password" class="label">Password</label>
+            </div>
+            </div>
+          <input type="submit" class="form-control sign-btn" value="Sign In"/>
+          <p class="text">
+            Forgot Password? <a href="#">Get help</a> signing in
+          </p>
+        </form> 
+
+<!-- 
+        Register form -->
+        <form class="sign-up-form" #registrationForm="ngForm" (ngSubmit)="register(registrationForm)">
+          <div class="logo">
+            <img src="../../../assets/images/logo.png" alt="booksphere">
+            <h4>booksphere</h4>
+          </div>
+
+          <div class="heading">
+            <h2>Get Started</h2>
+            <h6>Already have an account?</h6>
+            <a routerLink="login" class="toggle">Sign in</a>
+          </div>
+
+            <div class="actual-form">
+              <div class="input-wrap">
+                <input type="text" class="input-field" ngModel name="firstname" id="firstname" required>
+                <label for="firstname" class="label">First Name</label>
+              </div>
+              <div class="input-wrap">
+                <input type="text" class="input-field" ngModel name="lastname" id="lastname" required>
+                <label for="lastname" class="label">Last Name</label>
+              </div>
+        
+            <div class="input-wrap">
+              <input type="email" class="input-field " ngModel name="email" id="email" required="" >
+              <label for="email" class="label">Email</label>
+            </div>
+            <div class="input-wrap">
+              <input type="password" class="input-field " ngModel name="password" id="password" required="" >
+              <label for="password" class="label">Password</label>
+            </div>
+
+            <div class="input-wrap">
+              <input type="password" class="input-field" ngModel id="confirmPassword" name="confirmPassword" required>
+              <label for="confirmPassword" class="label">Confirm Password</label>
+            </div>
+            </div>
+          <input type="submit" class="toggle sign-btn" value="Sign Up"/>
+          <p class="text">
+            By signing up,I agree to the <a href="#">Terms Of Services</a> and <a href="#">Privacy Policy</a>
+          </p>
+        </form> 
+
+      </div>
+      <div class="carousel">
+        
+      </div>
+    </div>
+  </div>
+</main>
+
+
+
+ <!-- hetha ma yetmasechhhhhhhhhhhhhhh
+       <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+        <div class="input-box">
+          <header>Sign In</header>
+          <div class="input-field">
+            <input type="email" class="input form-control" ngModel name="email" id="email" required="" >
+            <label for="email" class="form-label">Email</label>
+          </div>
+          <div class="input-field">
+            <input type="password" class="input form-control" ngModel name="password" id="password" required="" >
+            <label for="password" class="form-label">Password</label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-outline-primary form-control rounded-0">Submit</button>
+      </form> -->
